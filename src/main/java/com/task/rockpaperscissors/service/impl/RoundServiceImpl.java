@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class RoundServiceImpl implements RoundService {
 
+    private final EasyRandom easyRandom = new EasyRandom();
+
     private Total total = new Total();
 
     @Override
     public Round playRound() {
-        EasyRandom easyRandom = new EasyRandom();
-
         Choice player1 = Choice.STONE;
         Choice player2 = easyRandom.nextObject(Choice.class);
 
