@@ -27,12 +27,12 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-validation'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'junit:junit:4.13.1'
-	implementation 'org.jeasy:easy-random-core:4.1.0'
-	implementation 'org.projectlombok:lombok'
+	compile 'org.springframework.boot:spring-boot-starter-web'
+	compile 'org.springframework.boot:spring-boot-starter-validation'
+	compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+	compile 'junit:junit:4.13.1'
+	compile 'org.jeasy:easy-random-core:4.1.0'
+	compile 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
